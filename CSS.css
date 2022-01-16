@@ -1,0 +1,113 @@
+@keyframes path-random {
+    1%, 100% {
+        fill: none;
+    }
+}
+@keyframes shot {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+        transform: rotate(-93deg);
+    }
+    10% {
+        opacity: 1;
+        transform: rotate(-87deg);
+    }
+    20% {
+        opacity: 1;
+        transform: rotate(-92.5deg);
+    }
+    30% {
+        opacity: 1;
+        transform: rotate(-88.5deg);
+    }
+    40% {
+        opacity: 1;
+        transform: rotate(-91deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(-89deg);
+    }
+    60% {
+        opacity: 1;
+        transform: rotate(-90.5deg);
+    }
+    70% {
+        opacity: 1;
+        transform: rotate(-89.5deg);
+    }
+    80% {
+        opacity: 1;
+        transform: rotate(-90.3deg);
+    }
+    90% {
+        opacity: 1;
+        transform: rotate(-89.7deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-90deg);
+    }
+}
+* { 
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+html, body, svg { 
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a3d0c3;
+}
+main {
+    width: 120vmin;
+    height: 100vmin;
+}
+@for $i from 1 through 88 {
+    #svg_1 path:nth-child(#{$i}) {
+        animation-name: path-random;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        animation-duration: random(10)/10+s;
+    }
+}
+.arrow {
+    position: relative;
+    width: 7vmin;
+    height: 42vmin;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: rotate(-90deg);
+    transform-origin: bottom;
+    opacity: 0;
+}
+.__1 {
+    top: -114.8vmin;
+    left: 40vmin;
+    animation-delay: 2s;
+    animation-name: shot;
+}
+.__2 {
+    top: -139vmin;
+    left: 52vmin;
+    animation-delay: 7s;
+    animation-name: shot;
+}
+.__3 {
+    top: -174vmin;
+    left: 64vmin;
+    animation-delay: 4.5s;
+    animation-name: shot;
+}
