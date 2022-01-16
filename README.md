@@ -1,2 +1,2 @@
 # Archery
-An archery animation coded in HTML and CSS (SCSS). Enjoy!
+An archery animation coded in HTML and CSS. Enjoy!
